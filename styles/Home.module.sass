@@ -1,29 +1,50 @@
 .container
 
-.topbar
-    background: rgb(255, 255, 106)
-    padding: 10px
+    .topbar
+        background: rgb(255, 255, 106)
+        padding: 10px
 
-    .toggle_btn
-        font-size: 2em
-        letter-spacing: .1em
-        font-weight: 700
-        font-family: sans-serif
-        position: absolute
-        transform: rotate(90deg)
-        transition: transform .3s
-        padding: 0px 5px
+        .toggle_btn
+            font-size: 2em
+            letter-spacing: .1em
+            font-weight: 700
+            font-family: sans-serif
+            position: absolute
+            transform: rotate(90deg)
+            transition: transform .3s
+            padding: 0px 5px
 
-    .toggle_btn:hover
-        transform: rotate(0deg)
-        transition: transform .3s
+        .toggle_btn:hover
+            transform: rotate(0deg)
+            transition: transform .3s
 
-    .myname
-        font-size: 2em
-        text-align: center
-        font-weight: 700
-        font-family: sans-serif
+        .myname
+            font-size: 2em
+            text-align: center
+            font-weight: 700
+            font-family: sans-serif
 
-.main
+    .main
 
-.footer
+        .about, .skills
+
+            padding: 20px 10px
+            font-size: 2em
+            font-family: 'Times New Roman', Times, serif
+
+        .about
+
+            text-align: center
+
+        .skills
+
+            width: 100vw
+            border: 1px solid black
+
+            img
+                object-fit: cover
+                background-position: center
+                background-size: cover
+
+    .footer
+        padding: 10px

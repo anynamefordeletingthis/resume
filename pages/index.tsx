@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import Resume from "../components/Resume";
-import Topbar from "../components/topbar/Topbar";
+
+
 import styles from "../styles/Home.module.sass";
+import { html_css_js, nodejs, react } from "../src/images";
 
 const Home: NextPage = () => {
   return (
@@ -15,13 +15,54 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Topbar>DIPAK GIRI</Topbar>
-        <Resume />
+
+        <About />
+        <Skills />
       </main>
 
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer}>
+        <Footer />
+      </footer>
     </div>
   );
 };
 
 export default Home;
+
+function Header() {
+  return (
+    <>
+      <header className={styles.header}>Hello World!</header>
+    </>
+  )
+}
+
+export const About = () => {
+  return (<>
+    <div className={styles.about}>
+      <Header />
+      <span>My name is Dipak Giri. i'm a CS student of 2nd year.
+      </span>
+    </div>
+  </>);
+};
+
+export const Skills = () => {
+  return (<>
+    <div className={styles.skills}>
+      <img src={html_css_js.src} alt="not found" />
+      <img src={nodejs.src} alt="not found" />
+      <img src={react.src} alt="not found" />
+    </div>
+  </>);
+};
+
+
+export function Footer() {
+  return (
+    <>
+      <a target={"_blank"} href="" className={styles.fb}>Dipak Giri</a>
+      <a target={"_blank"} href="" className={styles.insta}>Dipak Giri</a>
+    </>
+  )
+}
